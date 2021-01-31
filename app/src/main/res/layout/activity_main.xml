@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgavtid"
+
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/img1"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.268"
+        app:civ_border_width="5dp"
+        app:civ_border_color="#FF000000"
+        tools:ignore="MissingConstraints">
+
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <ImageView
+
+        android:id="@+id/iconid"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginBottom="8dp"
+
+        android:background="@drawable/icon1"
+        android:backgroundTint="@color/teal_200"
+        app:layout_constraintBottom_toBottomOf="@id/imgavtid"
+        app:layout_constraintRight_toRightOf="@id/imgavtid">
+
+    </ImageView>
+
+    <Button
+        android:id="@+id/btnid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+
+        android:backgroundTint="@color/black"
+        android:text="Upload"
+
+        android:textColor="@color/teal_200"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="@id/imgavtid"
+        app:layout_constraintRight_toRightOf="@id/imgavtid"
+        app:layout_constraintTop_toBottomOf="@id/imgavtid">
+
+    </Button>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
